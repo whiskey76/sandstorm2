@@ -408,16 +408,16 @@ alias 1cat="cat /etc/systemd/system/1insserver.service"
 alias 1tail="tail -f $HOME/server/1sandstorm/Insurgency/Saved/Logs/Insurgency.log"
 EOF
 
-# Create update.sh so the update alias works
+# Create 1update.sh so the 1update alias works
 touch 1update.sh
 chmod +x 1update.sh
 cat <<EOF > $HOME/server/1update.sh
 #!/usr/bin/env bash
 
-sudo systemctl stop insserver.service
+sudo systemctl stop 1insserver.service
 $HOME/server/steamcmd.sh +force_install_dir $HOME/server/1sandstorm +login anonymous +app_update 581330 validate +quit
 sudo systemctl daemon-reload
-sudo systemctl start insserver.service
+sudo systemctl start 1insserver.service
 EOF
 
 # Our startup command begins with ExecStart= under [Service]
@@ -685,4 +685,4 @@ exit 0
 # -Mutators=Mutator1,Mutator2,Mutator3
 
 # You now have a functioning 12-player co-op server (or two). Congrats!
-# Use the 1start & 2start commands to fire up the servers. Happy hunting.
+# Use the start & 2start commands to fire up the servers. Happy hunting.
