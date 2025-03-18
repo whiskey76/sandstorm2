@@ -685,4 +685,4 @@ exit 0
 # -Mutators=Mutator1,Mutator2,Mutator3
 
 # You now have a functioning 12-player co-op server (or two). Congrats!
-# Use the 1start & 2start commands to fire up the servers. Happy hunting.
+# Use the start & 2start commands to fire up the servers. Happy hunting.
