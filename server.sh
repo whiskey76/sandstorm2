@@ -686,3 +686,11 @@ exit 0
 
 # You now have a functioning 12-player co-op server (or two). Congrats!
 # Use the start & 2start commands to fire up the servers. Happy hunting.
+
+# If you are tired of typing the sudo password, see below.
+# This is considered a security risk, but it's so convenient.
+# Type the command "sudo visudo" and hit enter.
+# Scroll to the bottom of the file and input the following:
+# username ALL=(ALL) NOPASSWD: ALL
+# Of course change "username" to your username. Save and exit.
+# Now you no longer have to type your sudo password to do things.
